@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="167dp"
+    android:background="@color/surface"
+    android:padding="@dimen/padding_16dp">
+
+    <ImageView
+        android:id="@+id/avatar_iv"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.PrimaryTextField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/avatar_iv"
+        app:layout_constraintTop_toTopOf="@id/avatar_iv"
+        tools:text="Четыре сыра" />
+
+    <TextView
+        android:id="@+id/description_tv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.ItemDescription"
+        app:layout_constraintBottom_toTopOf="@id/price_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/avatar_iv"
+        app:layout_constraintTop_toBottomOf="@id/title_tv"
+        app:layout_constraintVertical_bias="0"
+        tools:text="Баварские колбаски, ветчина,пикантная пепперони, острая чоризо,томатный соус" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/price_btn"
+        android:layout_width="87dp"
+        android:layout_height="32dp"
+        android:backgroundTint="@color/surface"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="от 345 р"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.ChipText"
+        android:textColor="@color/primary"
+        app:cornerRadius="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="@color/primary"
+        app:strokeWidth="1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
