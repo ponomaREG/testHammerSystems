@@ -21,7 +21,10 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {
@@ -52,6 +55,9 @@ dependencies {
     implementation(PresentationsDependency.LIFECYCLE_VIEWMODEL)
     implementation(PresentationsDependency.NAVIGATION_FRAGMENT)
     implementation(PresentationsDependency.NAVIGATION_UI)
+    implementation(PresentationsDependency.SHIMMER)
+    implementation(PresentationsDependency.GROUPIE)
+    implementation(PresentationsDependency.GROUPIE_BINDING)
     implementation(PresentationsDependency.GLIDE)
     kapt(PresentationsDependency.KAPT_GLIDE)
 

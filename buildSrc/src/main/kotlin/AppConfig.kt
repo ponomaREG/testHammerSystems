@@ -1,6 +1,6 @@
 object AppConfig {
 
-    const val APPLICATION_ID = "org.disf.app.mobileuptrainee"
+    const val APPLICATION_ID = "org.disf.app.hammer_system"
 
     const val COMPILE_SDK_VERSION = 32
     const val MIN_SDK_VERSION = 23
