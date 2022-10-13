@@ -8,6 +8,7 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="org.disf.app.hammer_system.presentation.fragment.HomeFragment"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home"
+        />
 
 </navigation>
